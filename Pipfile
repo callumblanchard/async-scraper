@@ -1,0 +1,24 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+flake8 = "*"
+black = "*"
+pipreqs = "*"
+
+[packages]
+requests = "*"
+beautifulsoup4 = "*"
+asyncio = "*"
+aiohttp = "*"
+aiofiles = "*"
+colorama = "*"
+typing = "*"
+
+[requires]
+python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
