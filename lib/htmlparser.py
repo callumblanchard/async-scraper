@@ -1,6 +1,7 @@
 import re
 import urllib.error
 import urllib.parse
+import asyncio
 
 from aiohttp import ClientSession, ClientError
 from aiohttp.http_exceptions import HttpProcessingError
@@ -25,6 +26,7 @@ async def parse(url: str, session: ClientSession, **kwargs) -> set:
     except (
         ClientError,
         HttpProcessingError,
+        asyncio.TimeoutError
     ) as e:
         logger.error(
             "aiohttp exception for %s [%s]: %s",

@@ -5,18 +5,20 @@ import asyncio
 from lib.logtimer import log_time
 from lib.loggerinit import logger_init
 from lib.bulkcrawl import bulk_crawl_and_write
-from lib.urlgetter import get_urls
+from lib.urlgetter import get_organic_urls
 
 logger = logger_init(__name__)
 
 
 @log_time
 def main():
+    keyword = input("Enter a keyword or phrase: ")
+
     import pathlib
 
     here = pathlib.Path(__file__).parent
 
-    urls = get_urls(here.joinpath("urls.txt"))
+    urls = asyncio.run(get_organic_urls(keyword))
 
     outpath = here.joinpath("foundurls.txt")
     with open(outpath, "w") as outfile:

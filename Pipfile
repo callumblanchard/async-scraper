@@ -16,6 +16,7 @@ aiohttp = "*"
 aiofiles = "*"
 colorama = "*"
 typing = "*"
+async-timeout = "*"
 
 [requires]
 python_version = "3.7"
