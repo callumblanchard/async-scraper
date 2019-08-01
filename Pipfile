@@ -13,7 +13,6 @@ beautifulsoup4 = "*"
 asyncio = "*"
 aiohttp = "*"
 aiofiles = "*"
-colorama = "*"
 typing = "*"
 async-timeout = "*"
 
