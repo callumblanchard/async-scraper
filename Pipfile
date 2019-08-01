@@ -9,7 +9,6 @@ black = "*"
 pipreqs = "*"
 
 [packages]
-requests = "*"
 beautifulsoup4 = "*"
 asyncio = "*"
 aiohttp = "*"

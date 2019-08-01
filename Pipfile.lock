@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "73459b7490f7794348e2a1c13c744ce366daae431e0ea80ed61f37613934ca46"
+            "sha256": "db7ac4eecc7f832e3a57f29161e1f6820b7fab861fbb1ea7e090ebb25a79bbd6"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -86,13 +86,6 @@
             "index": "pypi",
             "version": "==4.8.0"
         },
-        "certifi": {
-            "hashes": [
-                "sha256:046832c04d4e752f37383b628bc601a7ea7211496b4638f6514d0e5b9acc4939",
-                "sha256:945e3ba63a0b9f577b1395204e13c3a231f9bc0223888be653286534e5873695"
-            ],
-            "version": "==2019.6.16"
-        },
         "chardet": {
             "hashes": [
                 "sha256:84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae",
@@ -149,14 +142,6 @@
             ],
             "version": "==4.5.2"
         },
-        "requests": {
-            "hashes": [
-                "sha256:11e007a8a2aa0323f5a921e9e6a2d7e4e67d9877e85773fba9ba6419025cbeb4",
-                "sha256:9cf5292fcd0f598c671cfc1e0d7d1a7f13bb8085e9a590f48c010551dc6c4b31"
-            ],
-            "index": "pypi",
-            "version": "==2.22.0"
-        },
         "soupsieve": {
             "hashes": [
                 "sha256:72b5f1aea9101cf720a36bb2327ede866fd6f1a07b1e87c92a1cc18113cbc946",
@@ -172,13 +157,6 @@
             ],
             "index": "pypi",
             "version": "==3.7.4"
-        },
-        "urllib3": {
-            "hashes": [
-                "sha256:b246607a25ac80bedac05c6f282e3cdaf3afb65420fd024ac94435cabe6e18d1",
-                "sha256:dbe59173209418ae49d485b87d1681aefa36252ee85884c31346debd19463232"
-            ],
-            "version": "==1.25.3"
         },
         "yarl": {
             "hashes": [
@@ -303,7 +281,6 @@
                 "sha256:11e007a8a2aa0323f5a921e9e6a2d7e4e67d9877e85773fba9ba6419025cbeb4",
                 "sha256:9cf5292fcd0f598c671cfc1e0d7d1a7f13bb8085e9a590f48c010551dc6c4b31"
             ],
-            "index": "pypi",
             "version": "==2.22.0"
         },
         "toml": {
