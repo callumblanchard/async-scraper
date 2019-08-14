@@ -41,7 +41,8 @@ async def parse(url: str, session: ClientSession, **kwargs) -> set:
         )
         return found
     else:
-        for link in HREF_RE.findall(html):
+        links = HREF_RE.findall(html)
+        for link in links:
             try:
                 abslink = urllib.parse.urljoin(url, link)
             except (urllib.error.URLError, ValueError):

@@ -13,12 +13,13 @@ logger = logger_init(__name__)
 @log_time
 def main():
     keyword = input("Enter a keyword or phrase: ")
+    limit: int = int(input("How many search results?: "))
 
     import pathlib
 
     here = pathlib.Path(__file__).parent
 
-    urls = asyncio.run(get_organic_urls(keyword))
+    urls = asyncio.run(get_organic_urls(keyword=keyword, limit=limit))
 
     outpath = here.joinpath("foundurls.txt")
     with open(outpath, "w") as outfile:
